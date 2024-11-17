@@ -1,0 +1,277 @@
+﻿
+@@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+    font-size: 24px
+}
+
+@@media screen and (min-width:1840px) {
+    .inner-header {
+        width: 1840px;
+    }
+
+    .container-header {
+        width: 1840px;
+    }
+
+    #search-input {
+        padding: 16px;
+        padding-right: 634px;
+    }
+}
+
+@@media screen and (max-width:1839px) {
+    .inner-header {
+        width: 1053px;
+    }
+
+    .container-header {
+        width: 1053px;
+    }
+
+    #search-input {
+        padding: 16px;
+        padding-right: 58px;
+    }
+}
+
+#container {
+    border: 1px solid #000000
+}
+
+.container-header {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header {
+    background-color: darkblue;
+    display: block;
+}
+
+.inner-header {
+    padding: 5px;
+    display: flex;
+    color: white;
+}
+
+.logo a img {
+    width: 120px;
+    height: 50px;
+}
+
+.menu {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: darkblue;
+}
+
+.menu-list {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.logo {
+    display: flex;
+}
+
+.search-section {
+    text-align: center;
+    background-color: white;
+}
+
+    .search-section h5 {
+        font-size: 15px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-button {
+    background-color: lightslategray;
+    padding: 10px 20px;
+    border: none;
+    color: black;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+    .search-button:hover {
+        background-color: #808080;
+    }
+
+.left-header {
+    display: flex;
+    margin-left: auto;
+}
+
+.Hotline {
+    text-align: center;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.Hotline h3{
+    font-size:10px;
+}
+    .Hotline img {
+        display: inline-block;
+        max-width: 18px;
+        margin-bottom: 27px;
+    }
+
+    .Hotline div {
+        display: inline-block;
+    }
+
+.shoppingCart {
+    font-size: 15px;
+    vertical-align: inherit;
+    display: inline-block;
+    margin: 2px;
+    border-left: solid gray 0.5px;
+    padding-left: 20px;
+    padding-right: 15px;
+}
+
+    .shoppingCart img {
+        width: 50px;
+        height: auto;
+    }
+
+    .shoppingCart a {
+        text-decoration: none;
+        color: white;
+        margin-bottom: 342px;
+    }
+
+.prodOrders {
+    font-size: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+}
+
+    .prodOrders img {
+        width: 50px;
+        height: auto;
+    }
+
+    .prodOrders a {
+        text-decoration: none;
+        color: white;
+    }
+
+.dangnhap {
+    font-size: 15px;
+    vertical-align: text-bottom;
+    display: inline-block;
+    justify-content: center;
+    margin: 2px;
+}
+
+    .dangnhap a {
+        display: inline-block;
+        text-decoration: none;
+        border: 2px solid black;
+        padding: 10px;
+        background-color: yellow;
+    }
+
+footer {
+    background-color: black;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.aboutUs {
+    text-align: left;
+    align-items: center;
+}
+
+    .aboutUs h2 {
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+
+    .aboutUs p {
+        font-size: 15px;
+    }
+
+.support {
+    text-align: left;
+}
+
+    .support h3 {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .support ul {
+        list-style-type: none;
+        text-align: left;
+    }
+
+        .support ul li {
+            margin: 5px;
+        }
+
+            .support ul li a {
+                text-decoration: none;
+                color: white;
+                font-size: 14px;
+            }
+
+.request {
+    text-align: center;
+}
+
+    .request h3 {
+        font-size: 18px;
+    }
+
+    .request ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+        .request ul li {
+            margin: 5px;
+        }
+
+            .request ul li a {
+                text-decoration: none;
+                color: white;
+                font-size: 14px;
+                text-align: left;
+            }
+
+.socialMedia {
+    display: flex;
+}
+
+    .socialMedia img {
+        width: 50px;
+        height: 50px;
+        margin-left: 40px
+    }
+

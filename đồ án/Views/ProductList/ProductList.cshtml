@@ -1,0 +1,577 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<style type="text/css">
+    .containersp {
+        background-color: white;
+    }
+
+    @@media screen and (max-width:1280px) {
+        .containersp {
+            width: 958px;
+        }
+    }
+
+    @@media screen and (min-width:1280px) {
+        .containersp {
+            width: 1316px;
+        }
+    }
+
+    .containersp {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+        .bannerproduct {
+            display: flex;
+            background-size: cover;
+            background-image: url('../../content/img/prodetails/bannerpro.jpg');
+            height: 40%;
+            align-items: center;
+            background-position: center;
+            text-align: center;
+            font-size: 36px;
+            justify-content: center;
+        }
+
+            .bannerproduct a {
+                font-weight: bold;
+                color: red;
+                text-decoration: none;
+            }
+
+            .bannerproduct h1 {
+                font-size: 30px;
+                color: white;
+                text-align: center;
+                font-weight: bold;
+            }
+
+        .containergiay {
+            background-color: beige;
+            margin-bottom: 4%;
+            text-align: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+            .containergiay h1 {
+                text-align: center;
+                font-size: 51px;
+                color: darkred;
+            }
+
+        .phude {
+            color: grey;
+            font-size: 26px;
+        }
+
+        .giaylist {
+        }
+
+            .giaylist li {
+                display: inline-block;
+                width: 500px;
+            }
+
+        .giay {
+            padding: 20px;
+            width: 20%;
+            display: inline-block;
+            vertical-align: top;
+            font-size: 50px;
+        }
+
+        .tenGiay {
+            font-size: 27px;
+            text-align: center;
+            color: darkblue;
+            font-weight: bold;
+        }
+
+        .giay img {
+            width: 100%;
+            border-style: groove;
+            border-radius: 25px
+        }
+
+        .price {
+            font-size: 32px;
+            text-align: center;
+            font-weight: bold;
+            color: red;
+        }
+
+        .detail {
+            font-size: 24px;
+            text-align: left;
+            color: grey;
+        }
+
+        .firstPrice {
+            font-size: 17px;
+            text-align: center;
+            color: black;
+        }
+
+        .more {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+            .more a {
+                text-align: center;
+                font-size: 25px;
+                padding: 10px;
+                background-color: greenyellow;
+                height: 100px;
+                margin-bottom: 50px;
+                text-decoration: none;
+                color: white;
+            }
+</style>
+
+<section class="containersp">
+    <section class="bannerproduct">
+        <h1>Giày Đá Bóng Chính Hãng | Giày Đá Banh | </h1>
+        <a href="~/Home/TrangChu">Trang Chủ</a>
+    </section>
+    <section class="listfull">
+        <div class="containergiay">
+            <h1>Giày Bóng Đá<p class="phude">(40 sản phẩm)</p></h1>
+            <div class="giaylist">
+                <div class="giay">
+                    <a href="~/ProductDetails/ProductDetails">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm1.png" />
+                    </a>
+                    <p class="tenGiay">Giày bóng đá Jogarbola Rac..</p>
+                    <p class="price">634,000₫ <del class="firstPrice">(668,000₫)</del></p>
+                    <p class="detail">
+                        TẶNG KÈM TÚI RÚT + TẤT
+                        Phụ kiện mua kèm giày giảm 20%
+                    </p>
+                </div>
+                <div class="giay">
+                    <a href="~/ProductDetails/ProductDetail1">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm2.png" />
+                    </a>
+                    <p class="tenGiay">Giày bóng đá Mitre 100795TF..</p>
+                    <p class="price">589,000₫ <del class="firstPrice">(620,000₫)</del></p>
+                    <p class="detail">TẶNG KÈM TÚI RÚT + TẤT</p>
+                </div>
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm3.png" />
+                    </a>
+                    <p class="tenGiay">Giày bóng đá Mitre 201106TF..</p>
+                    <p class="price">522,000₫ <del class="firstPrice">(550,000₫)</del></p>
+                    <p class="detail">
+                        TẶNG KÈM TÚI RÚT + TẤT
+                        Phụ kiện mua kèm giày giảm 20%
+                    </p>
+                </div>
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm4.png" />
+                    </a>
+                    <p class="tenGiay">Giày bóng đá Mitre 201210TF..</p>
+                    <p class="price">522,000₫ <del class="firstPrice">(550,000₫)</del></p>
+                    <p class="detail">
+                        TẶNG KÈM TÚI RÚT + TẤT
+                        Phụ kiện mua kèm giày giảm 20%
+                    </p>
+                </div>
+            </div>
+
+            <div class="giaylist">
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm5.png" />
+                    </a>
+                    <p class="tenGiay">Giày bóng đá Mizuno Monaci..</p>
+                    <p class="price">1,386,000₫ <del class="firstPrice">(1,459,000₫)</del></p>
+                    <p class="detail">
+                        TẶNG KÈM TÚI RÚT + TẤT
+                        Phụ kiện mua kèm giày giảm 20%
+                    </p>
+                </div>
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm6.png" />
+                    </a>
+                    <p class="tenGiay">Giày Kamito Velocidad IC Fir..</p>
+                    <p class="price">569,000₫ <del class="firstPrice">(599,000₫)</del></p>
+                    <p class="detail">TẶNG KÈM TÚI RÚT + TẤT</p>
+                </div>
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm7.png" />
+                    </a>
+                    <p class="tenGiay">Giày Kamito Velocidad Play T ..</p>
+                    <p class="price">474,000₫ <del class="firstPrice">(499,000₫)</del></p>
+                    <p class="detail">TẶNG KÈM TÚI RÚT + TẤT</p>
+                </div>
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm8.png" />
+                    </a>
+                    <p class="tenGiay">Giày Kamito Velocidad Pro TF..</p>
+                    <p class="price">569,000₫ <del class="firstPrice">(599,000₫)</del></p>
+                    <p class="detail">TẶNG KÈM TÚI RÚT + TẤT</p>
+                </div>
+            </div>
+
+            <div class="giaylist">
+                <div class="giay">
+                    <a href="~/ProductDetail/ProductDetail">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm9.png" />
+                    </a>
+                    <p class="tenGiay">Giày bóng đá Jogarbola Rac..</p>
+                    <p class="price">634,000₫ <del class="firstPrice">(668,000₫)</del></p>
+                    <p class="detail">
+                        TẶNG KÈM TÚI RÚT + TẤT
+                        Phụ kiện mua kèm giày giảm 20%
+                    </p>
+                </div>
+                <div class="giay">
+                    <a href="~/ProductDetail/ProductDetail1">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm10.png" />
+                    </a>
+                    <p class="tenGiay">Giày bóng đá Mitre 100795TF..</p>
+                    <p class="price">589,000₫ <del class="firstPrice">(620,000₫)</del></p>
+                    <p class="detail">TẶNG KÈM TÚI RÚT + TẤT</p>
+                </div>
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm11.png" />
+                    </a>
+                    <p class="tenGiay">Giày bóng đá Mitre 201106TF..</p>
+                    <p class="price">522,000₫ <del class="firstPrice">(550,000₫)</del></p>
+                    <p class="detail">
+                        TẶNG KÈM TÚI RÚT + TẤT
+                        Phụ kiện mua kèm giày giảm 20%
+                    </p>
+                </div>
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm12.png" />
+                    </a>
+                    <p class="tenGiay">Giày bóng đá Mitre 201210TF..</p>
+                    <p class="price">522,000₫ <del class="firstPrice">(550,000₫)</del></p>
+                    <p class="detail">
+                        TẶNG KÈM TÚI RÚT + TẤT
+                        Phụ kiện mua kèm giày giảm 20%
+                    </p>
+                </div>
+            </div>
+
+            <div class="giaylist">
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm13.png" />
+                    </a>
+                    <p class="tenGiay">Giày bóng đá Mizuno Monaci..</p>
+                    <p class="price">1,386,000₫ <del class="firstPrice">(1,459,000₫)</del></p>
+                    <p class="detail">
+                        TẶNG KÈM TÚI RÚT + TẤT
+                        Phụ kiện mua kèm giày giảm 20%
+                    </p>
+                </div>
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm14.png" />
+                    </a>
+                    <p class="tenGiay">Giày Kamito Velocidad IC Fir..</p>
+                    <p class="price">569,000₫ <del class="firstPrice">(599,000₫)</del></p>
+                    <p class="detail">TẶNG KÈM TÚI RÚT + TẤT</p>
+                </div>
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm15.png" />
+                    </a>
+                    <p class="tenGiay">Giày Kamito Velocidad Play T ..</p>
+                    <p class="price">474,000₫ <del class="firstPrice">(499,000₫)</del></p>
+                    <p class="detail">TẶNG KÈM TÚI RÚT + TẤT</p>
+                </div>
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm16.png" />
+                    </a>
+                    <p class="tenGiay">Giày Kamito Velocidad Pro TF..</p>
+                    <p class="price">569,000₫ <del class="firstPrice">(599,000₫)</del></p>
+                    <p class="detail">TẶNG KÈM TÚI RÚT + TẤT</p>
+                </div>
+            </div>
+
+            <div class="giaylist">
+                <div class="giay">
+                    <a href="~/ProductDetail/ProductDetail">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm17.png" />
+                    </a>
+                    <p class="tenGiay">Giày bóng đá Jogarbola Rac..</p>
+                    <p class="price">634,000₫ <del class="firstPrice">(668,000₫)</del></p>
+                    <p class="detail">
+                        TẶNG KÈM TÚI RÚT + TẤT
+                        Phụ kiện mua kèm giày giảm 20%
+                    </p>
+                </div>
+                <div class="giay">
+                    <a href="~/ProductDetail/ProductDetail1">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm18.png" />
+                    </a>
+                    <p class="tenGiay">Giày bóng đá Mitre 100795TF..</p>
+                    <p class="price">589,000₫ <del class="firstPrice">(620,000₫)</del></p>
+                    <p class="detail">TẶNG KÈM TÚI RÚT + TẤT</p>
+                </div>
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm19.png" />
+                    </a>
+                    <p class="tenGiay">Giày bóng đá Mitre 201106TF..</p>
+                    <p class="price">522,000₫ <del class="firstPrice">(550,000₫)</del></p>
+                    <p class="detail">
+                        TẶNG KÈM TÚI RÚT + TẤT
+                        Phụ kiện mua kèm giày giảm 20%
+                    </p>
+                </div>
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm20.png" />
+                    </a>
+                    <p class="tenGiay">Giày bóng đá Mitre 201210TF..</p>
+                    <p class="price">522,000₫ <del class="firstPrice">(550,000₫)</del></p>
+                    <p class="detail">
+                        TẶNG KÈM TÚI RÚT + TẤT
+                        Phụ kiện mua kèm giày giảm 20%
+                    </p>
+                </div>
+            </div>
+
+            <div class="giaylist">
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm21.png" />
+                    </a>
+                    <p class="tenGiay">Giày bóng đá Mizuno Monaci..</p>
+                    <p class="price">1,386,000₫ <del class="firstPrice">(1,459,000₫)</del></p>
+                    <p class="detail">
+                        TẶNG KÈM TÚI RÚT + TẤT
+                        Phụ kiện mua kèm giày giảm 20%
+                    </p>
+                </div>
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm22.png" />
+                    </a>
+                    <p class="tenGiay">Giày Kamito Velocidad IC Fir..</p>
+                    <p class="price">569,000₫ <del class="firstPrice">(599,000₫)</del></p>
+                    <p class="detail">TẶNG KÈM TÚI RÚT + TẤT</p>
+                </div>
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm23.png" />
+                    </a>
+                    <p class="tenGiay">Giày Kamito Velocidad Play T ..</p>
+                    <p class="price">474,000₫ <del class="firstPrice">(499,000₫)</del></p>
+                    <p class="detail">TẶNG KÈM TÚI RÚT + TẤT</p>
+                </div>
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm24.png" />
+                    </a>
+                    <p class="tenGiay">Giày Kamito Velocidad Pro TF..</p>
+                    <p class="price">569,000₫ <del class="firstPrice">(599,000₫)</del></p>
+                    <p class="detail">TẶNG KÈM TÚI RÚT + TẤT</p>
+                </div>
+            </div>
+
+
+
+            <div class="giaylist">
+                <div class="giay">
+                    <a href="~/ProductDetail/ProductDetail">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm25.png" />
+                    </a>
+                    <p class="tenGiay">Giày bóng đá Jogarbola Rac..</p>
+                    <p class="price">634,000₫ <del class="firstPrice">(668,000₫)</del></p>
+                    <p class="detail">
+                        TẶNG KÈM TÚI RÚT + TẤT
+                        Phụ kiện mua kèm giày giảm 20%
+                    </p>
+                </div>
+                <div class="giay">
+                    <a href="~/ProductDetail/ProductDetail1">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm26.png" />
+                    </a>
+                    <p class="tenGiay">Giày bóng đá Mitre 100795TF..</p>
+                    <p class="price">589,000₫ <del class="firstPrice">(620,000₫)</del></p>
+                    <p class="detail">TẶNG KÈM TÚI RÚT + TẤT</p>
+                </div>
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm27.png" />
+                    </a>
+                    <p class="tenGiay">Giày bóng đá Mitre 201106TF..</p>
+                    <p class="price">522,000₫ <del class="firstPrice">(550,000₫)</del></p>
+                    <p class="detail">
+                        TẶNG KÈM TÚI RÚT + TẤT
+                        Phụ kiện mua kèm giày giảm 20%
+                    </p>
+                </div>
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm28.png" />
+                    </a>
+                    <p class="tenGiay">Giày bóng đá Mitre 201210TF..</p>
+                    <p class="price">522,000₫ <del class="firstPrice">(550,000₫)</del></p>
+                    <p class="detail">
+                        TẶNG KÈM TÚI RÚT + TẤT
+                        Phụ kiện mua kèm giày giảm 20%
+                    </p>
+                </div>
+            </div>
+
+
+
+            <div class="giaylist">
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm29.png" />
+                    </a>
+                    <p class="tenGiay">Giày bóng đá Mizuno Monaci..</p>
+                    <p class="price">1,386,000₫ <del class="firstPrice">(1,459,000₫)</del></p>
+                    <p class="detail">
+                        TẶNG KÈM TÚI RÚT + TẤT
+                        Phụ kiện mua kèm giày giảm 20%
+                    </p>
+                </div>
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm30.png" />
+                    </a>
+                    <p class="tenGiay">Giày Kamito Velocidad IC Fir..</p>
+                    <p class="price">569,000₫ <del class="firstPrice">(599,000₫)</del></p>
+                    <p class="detail">TẶNG KÈM TÚI RÚT + TẤT</p>
+                </div>
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm31.png" />
+                    </a>
+                    <p class="tenGiay">Giày Kamito Velocidad Play T ..</p>
+                    <p class="price">474,000₫ <del class="firstPrice">(499,000₫)</del></p>
+                    <p class="detail">TẶNG KÈM TÚI RÚT + TẤT</p>
+                </div>
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm32.png" />
+                    </a>
+                    <p class="tenGiay">Giày Kamito Velocidad Pro TF..</p>
+                    <p class="price">569,000₫ <del class="firstPrice">(599,000₫)</del></p>
+                    <p class="detail">TẶNG KÈM TÚI RÚT + TẤT</p>
+                </div>
+            </div>
+
+
+
+            <div class="giaylist">
+                <div class="giay">
+                    <a href="~/ProductDetail/ProductDetail">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm33.png" />
+                    </a>
+                    <p class="tenGiay">Giày bóng đá Jogarbola Rac..</p>
+                    <p class="price">634,000₫ <del class="firstPrice">(668,000₫)</del></p>
+                    <p class="detail">
+                        TẶNG KÈM TÚI RÚT + TẤT
+                        Phụ kiện mua kèm giày giảm 20%
+                    </p>
+                </div>
+
+                <div class="giay">
+                    <a href="~/ProductDetail/ProductDetail1">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm34.png" />
+                    </a>
+                    <p class="tenGiay">Giày bóng đá Mitre 100795TF..</p>
+                    <p class="price">589,000₫ <del class="firstPrice">(620,000₫)</del></p>
+                    <p class="detail">TẶNG KÈM TÚI RÚT + TẤT</p>
+                </div>
+
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm35.png" />
+                    </a>
+                    <p class="tenGiay">Giày bóng đá Mitre 201106TF..</p>
+                    <p class="price">522,000₫ <del class="firstPrice">(550,000₫)</del></p>
+                    <p class="detail">
+                        TẶNG KÈM TÚI RÚT + TẤT
+                        Phụ kiện mua kèm giày giảm 20%
+                    </p>
+                </div>
+
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm36.png" />
+                    </a>
+                    <p class="tenGiay">Giày bóng đá Mitre 201210TF..</p>
+                    <p class="price">522,000₫ <del class="firstPrice">(550,000₫)</del></p>
+                    <p class="detail">
+                        TẶNG KÈM TÚI RÚT + TẤT
+                        Phụ kiện mua kèm giày giảm 20%
+                    </p>
+                </div>
+
+            </div>
+
+
+
+            <div class="giaylist">
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm37.png" />
+                    </a>
+                    <p class="tenGiay">Giày bóng đá Mizuno Monaci..</p>
+                    <p class="price">1,386,000₫ <del class="firstPrice">(1,459,000₫)</del></p>
+                    <p class="detail">
+                        TẶNG KÈM TÚI RÚT + TẤT
+                        Phụ kiện mua kèm giày giảm 20%
+                    </p>
+                </div>
+
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm38.png" />
+                    </a>
+                    <p class="tenGiay">Giày Kamito Velocidad IC Fir..</p>
+                    <p class="price">569,000₫ <del class="firstPrice">(599,000₫)</del></p>
+                    <p class="detail">TẶNG KÈM TÚI RÚT + TẤT</p>
+                </div>
+
+
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm39.png" />
+                    </a>
+                    <p class="tenGiay">Giày Kamito Velocidad Play T ..</p>
+                    <p class="price">474,000₫ <del class="firstPrice">(499,000₫)</del></p>
+                    <p class="detail">TẶNG KÈM TÚI RÚT + TẤT</p>
+                </div>
+
+
+                <div class="giay">
+                    <a href="#">
+                        <img src="~/Content/img/KhuyenMaiImg/giaykm40.png" />
+                    </a>
+                    <p class="tenGiay">Giày Kamito Velocidad Pro TF..</p>
+                    <p class="price">569,000₫ <del class="firstPrice">(599,000₫)</del></p>
+                    <p class="detail">TẶNG KÈM TÚI RÚT + TẤT</p>
+                </div>
+
+            </div>
+            <div class="more">
+                <a href="~/ProductList/ProductList">Xem thêm -></a>
+            </div>
+        </div>
+    </section>
+</section>

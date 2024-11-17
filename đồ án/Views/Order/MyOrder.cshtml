@@ -1,0 +1,26 @@
+﻿@model đồ_án.Models.View_Model.HomeProductVM
+
+@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+
+
+<section class="container-fluid searchProd">
+    <h5>Tìm kiếm sản phẩm</h5>
+    @using (Html.BeginForm("Index", "Home", FormMethod.Get))
+    {
+        <div class="form-group search-container">
+            @Html.TextBoxFor(m => m.SearchTerm, new
+       {
+           @class = "search-input",
+           placeholder = "Nhập tên hoặc mã sản phẩm"
+            })
+
+            <button type="submit" class="search-button">Tìm kiếm</button>
+        </div>
+    }
+</section>
+
+@Html.Partial("ListProdPV", Model)
+

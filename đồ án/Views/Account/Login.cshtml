@@ -1,0 +1,79 @@
+﻿@model đồ_án.Models.View_Model.LoginVM
+
+
+
+@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<style>
+    .container-signup {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 5% 32%;
+    }
+
+    .container-info {
+        justify-content: center;
+        margin: 10px;
+        border-radius: 10px 0px 10px 0px;
+        border: 1px solid black;
+        background-image: url('../../content/img/anhnendangki/anna1.png');
+        margin: 20px;
+        color: white;
+      
+    }
+    .form-group {
+        margin:70px 50px;
+    }
+
+    .col-md-6 {
+        color: goldenrod;
+    }
+    
+    .btn {
+        font-size: 20px;
+        padding: 10px;
+        font-family: 'Times New Roman';
+    }
+</style>
+
+<!DOCTYPE html>
+<div class="container-signup">
+    @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <h2 class="col-md-6" style="text-align:center;">Đăng nhập</h2>
+        </div>
+        <div class="container-info">
+            @*Tên đăng nhập*@
+            <div class="form-group">
+                @Html.LabelFor(model => model.Username, new { @class = "control-label col-md-2" })
+                <div class="box col-md-4">
+                    @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            @*mật khẩu*@
+            <div class="form-group">
+                @Html.LabelFor(model => model.Password, new { @class = "control-label col-md-2" })
+                <div class="box col-md-4">
+                    @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-4">
+                <input type="submit" value="Đăng nhập" class="btn btn-info accountbtn" /><br />
+                <p>Bạn Chưa Có Tài Khoản? <a href="@Url.Action("Register", "Account", null)" />Đăng ký ngay</p>
+            </div>
+        </div>
+    }
+</div>
+

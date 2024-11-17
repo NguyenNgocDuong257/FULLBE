@@ -1,0 +1,289 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<style type="text/css">
+    .containerprodetail {
+        background-color: gainsboro;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1487px;
+    }
+
+    @@media screen and (max-width:1280px) {
+        .containerprodetail {
+            width: 1000px;
+        }
+    }
+
+    .bannerproduct {
+        display: flex;
+        justify-content: center;
+        background-size: cover;
+        background-image: url('../../content/img/prodetails/bannerpro.jpg');
+        height: 70%;
+        align-items: center;
+        background-position: center;
+        text-align: center;
+        font-size: 4vw;
+    }
+
+        .bannerproduct a {
+            font-weight: bold;
+            color: red;
+            text-decoration: none;
+        }
+
+    .price {
+        font-size: 45px;
+        text-align: left;
+        font-weight: bold;
+        color: red;
+    }
+
+    .firstPrice {
+        font-size: 50px;
+        text-align: center;
+        color: gray;
+    }
+
+    .detailfull {
+        display: inline-block;
+        justify-content: center;
+        text-align: center;
+        background-color: white;
+        margin: 50px 50px;
+        padding: 0% 5%;
+    }
+
+    .detail img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .detail {
+        width: 40%;
+        display: inline-block;
+    }
+
+        .detail h1 {
+            font-size: 50px;
+            text-align: left;
+        }
+
+    .khuyenmai {
+    }
+
+    .km {
+        font-size: 20px;
+        border: red;
+    }
+
+    .km1 {
+        font-size: 30px;
+        color: white;
+        background-color: red;
+    }
+
+    .ud {
+        font-size: 20px;
+        border: grey;
+    }
+
+    .ud1 {
+        font-size: 30px;
+        background-color: grey;
+    }
+
+    .size {
+        font-size: 30px;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .btn {
+        font-size: 20px;
+        padding: 10px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .option {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 30px;
+    }
+
+        .option a {
+            text-decoration: none;
+            padding: 0% 5%;
+            margin-top: 5%;
+        }
+
+    .datmua {
+        background-color: red;
+        padding: 30px;
+    }
+
+    .diachi {
+        background-color: darkblue;
+    }
+
+    .phude {
+        color: white;
+    }
+
+    .tieude {
+        font-weight: bold;
+        color: white;
+    }
+
+    .tablee {
+        border: grey;
+        margin-top: 5px;
+    }
+
+    .chu {
+        font-size: 30px;
+    }
+
+    .mota {
+        display: flex;
+        text-align: left;
+        background-color: white;
+        margin: 0px 60px;
+        border-top: 2px solid grey;
+        font-size: 20px;
+    }
+
+        .mota h1 {
+            font-size: 30px;
+            color: darkblue;
+            padding: 0px 50px;
+            text-align: center;
+        }
+
+    .mota2 {
+        display: block
+    }
+
+    .noidung {
+        font-size: 30px;
+    }
+
+    .discount {
+        display: flex;
+        justify-content: left;
+        text-align: left;
+    }
+
+    .btndiscount {
+        font-size: 30px;
+        padding: 10px;
+        margin-bottom: 30px;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+    }
+</style>
+<section class="containerprodetail">
+    <section class="bannerproduct">
+        <a href="~/Home/TrangChu">Trang Chủ</a>
+    </section>
+    <section class="detailfull">
+        <section class="detail">
+            <h1>Giày bóng đá Jogarbola Racer TF</h1>
+            <div class="discount">
+                <p class="price">634,000₫ <del class="firstPrice">(668,000₫)</del></p>
+                <button class="btndiscount">-5%</button>
+            </div>
+            <div class="khuyenmai">
+                <table border="1" class="km">
+                    <tr class="km1">
+                        <td>
+                            KHUYỄN MÃI ĐẶC BIỆT
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><b>✓</b> TẶNG KÈM TÚI RÚT + TẤT</p>
+                            <p><b>✓</b> Phụ kiện mua kèm giày giảm 20% (Tất - Keo - Túi - Áo Lót - Bó gối - Bó gót)</p>
+                        </td>
+                </table>
+            </div>
+            <div class="uudai">
+                <table border="1" class="ud">
+                    <tr class="ud1">
+                        <td>ƯU ĐÃI THÊM </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>✅ FREESHIP TOÀN QUỐC HÓA ĐƠN TỪ 500.000</p>
+                            <p>✅ HỖ TRỢ GIAO HỎA TỐC 2h TỐI ĐA 30.000 nội thành Hồ Chí Minh</p>
+                            <p>✅ Đổi trả trong 30 ngày rách da, bể đế</p>
+                            <p>✅ LƯU Ý: CHỈ ÁP DỤNG CHO SẢN PHẨM NGUYÊN GIÁ</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="size">
+                <p>Chọn size:</p>
+                <button class="btn">39</button>
+                <button class="btn">40</button>
+                <button class="btn">41</button>
+                <button class="btn">42</button>
+                <button class="btn">43</button>
+                <button class="btn">44</button>
+            </div>
+            <div class="option">
+                <a href="#" class="datmua">
+                    <p class="tieude">ĐẶT MUA ONLINE</p>
+                    <p class="phude">Giao hàng tận nơi</p>
+                </a>
+                <a href="#" class="diachi">
+                    <p class="tieude">ĐỊA CHỈ CỬA HÀNG</p>
+                    <p class="phude">Xem cửa hàng còn hàng & địa chỉ</p>
+                </a>
+            </div>
+
+            <div class="tab">
+                <table border="1" class="tablee">
+                    <tr class="chu">
+                        <td>CHÍNH HÃNG 100%</td>
+                        <td>GIAO HÀNG TOÀN QUỐC</td>
+                    </tr>
+                    <tr class="chu">
+                        <td>ĐỔI TRẢ TRONG 90 NGÀY </td>
+                        <td>BẢO HÀNH TRỌN ĐỜI</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="detail">
+            <img src="~/Content/img/KhuyenMaiImg/giaykm1-1.jpg" />
+        </section>
+    </section>
+    <div class="mota">
+        <section>
+            <h1>
+                MÔ TẢ SẢN PHẨM
+            </h1>
+        </section>
+        <div class="mota2">
+            <p class="noidung"><b>Không ngừng cải tiến về mẫu mã cũng như công nghệ sản xuất, thương hiệu JOGARBOLA nổi tiếng Nhật Bản không làm người yêu bóng đá phải thất vọng với những mẫu giày bóng đá đầy đẳng cấp.</b></p>
+            <p>
+                <b>JOGARBOLA</b> ra mắt mẫu giày đá bóng sân cỏ nhân tạo mới <b>JGBL Racer</b> với đặc điểm nổi bật như trọng lượng giày siêu nhẹ cho khả năng tấn công tuyệt vời cùng phần đế
+                đinh tạo ra những đột phá khi di chuyển.Với mẫu giày Jogarbola Racer này các cầu thủ có thể phô diễn toàn bộ kĩ thuật một cách trọn vẹn nhất.
+            </p>
+            <p>● Lưỡi gà liền ôm sát mu bàn chân, mang đến cảm giác thoải mái trong mọi pha xử lý bóng; hạn chế lệch lưỡi gà, thích nghi linh hoạt với đôi chân</p>
+            <p>● Da Microfiber chống cháy, chống xước, siêu bền, trọng lượng nhẹ, mang đến cảm giác thật chân</p>
+            <p>● Đinh dăm tứ giác giữ thăng bằng, tăng độ bám sân trong mọi điều kiện thời tiết</p>
+            <p>● Phần gót cảm giác rất chắc chắn và ôm rất chặt</p>
+        </div>
+    </div>
+
+</section>
+

@@ -1,0 +1,84 @@
+﻿
+
+
+.content {
+    border: 2px solid darkblue;
+    text-align: center;
+    padding: 20px;
+    margin: 50px 200px;
+    width: 70%;
+    border-radius: 10px 0 10px 0;
+    background-image: url('../../content/img/signin (3).png');
+    background-position: center;
+    background-size: cover;
+}
+
+.signIn {
+    text-align: center;
+}
+
+.account {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.inputAcc {
+    padding: 20px;
+    width: 50%;
+    border: 2px solid darkblue;
+    color: black;
+}
+
+.password {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.passAcc {
+    margin-top: 20px;
+    padding: 20px;
+    width: 50%;
+    border: 2px solid darkblue;
+    color: black;
+}
+
+.btn {
+    align-content: center;
+}
+
+.signInbtn {
+    margin-top: 20px;
+    border: 2px solid darkblue;
+    width: 10%;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.fgPass a {
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+}
+
+.signUp {
+    border-top: 2px solid grey;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+.btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+    .signUp a {
+        margin-top: 20px;
+        border: 2px solid black;
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 4px;
+        background-color: darkblue;
+        color: white;
+    }

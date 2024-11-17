@@ -1,0 +1,31 @@
+﻿@model đồ_án.Models.View_Model.ProductDetailVM
+@using PagedList.Mvc
+
+<link href="~/Content/css/sanPham.css" rel="stylesheet" />
+
+@*Hiển thị ds sản phẩm*@
+@if (Model.RelatedProducts != null && Model.RelatedProducts.Any())
+{
+    <section class="container-fluid feature-products">
+        <h4 style="font-weight: bold;">Sản phẩm tương tự</h4>
+        <ul class="products-container">
+            @foreach (var product in Model.RelatedProducts)
+            {
+                <li class="products-items">
+                    <div>
+                        <a href="@Url.Action("ProductDetail", "Home", new {id = product.ProductID})">
+                            <img src="@Html.DisplayFor(modelItem => product.ProductImage)" />
+                        </a>
+                    </div>
+
+                    <div>
+                        <5>@Html.DisplayFor(modelItem => product.ProductName)</5>
+                        <p class="prodSale">@Html.DisplayFor(modelItem => product.ProductPrice)</p>
+
+                    </div>
+                </li>
+            }
+        </ul>
+    </section>
+}
+

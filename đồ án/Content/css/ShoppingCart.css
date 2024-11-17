@@ -1,0 +1,114 @@
+﻿    
+.category{
+    display:flex;
+    justify-content:center;
+    align-items:center;  
+    margin-top:50px;
+}
+
+.category img{
+    height:60%
+}
+
+.category h2{
+    padding:10px;
+    border-left: 2px solid black;
+    margin-right: 200px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txtSearch {
+    padding: 10px;
+}
+
+.btnSearch {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color:darkblue;
+}
+
+.mainContent {
+    margin-top: 50px;
+    background-color:whitesmoke;
+    padding:10px;
+    display:flex;
+    justify-content:center;
+    gap:200px;
+    text-align:center;
+}
+
+.sanPham {
+    display: grid;   
+}
+    .chiTiet{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+.chiTiet a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+ h2{
+    font-size:20px;
+}
+.sanPham img{
+    width:100px;
+}
+
+.donGia {
+    display: grid;
+}
+
+p{
+    font-size:18px;
+}
+
+.soLuong {
+    display: grid;
+}
+
+.tien {
+    display: grid;
+}
+
+.sua {
+    display: grid;
+}
+
+.sua a{
+    font-size:18px;
+    text-decoration:none;
+    color:red;
+}
+
+.Buy {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 250px;
+    margin:20px;
+}
+
+.xoa a {
+    text-decoration: none;
+    color: red;
+}
+
+.mua .btnMua{
+    padding:10px 20px;
+    background-color:forestgreen;
+    color:white;
+    font-size:22px;
+}
+

@@ -1,0 +1,85 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<link href="~/Content/css/DatHang.css" rel="stylesheet" />
+<section class="dhContent">
+    <section class="Diachi">
+        <div class="HoTen">
+            <p>Lê Ngô Phúc Khang</p>            
+        </div>
+        <div>
+            <p>(+84)00000000</p>
+        </div>
+
+        <div class="soNha">
+            <p>185/68 đường Bà Hom, phường 13, quận 6, TP.HCM</p>           
+        </div>
+        <div class="macDinh">
+            <a href="">Mặc định</a>        
+        </div>
+        <div class="thayDoi">
+            <a href="#">Thay đổi</a>
+        </div>
+    </section>
+
+    <section class="chiTietDH">
+        <div class="Spham">
+            <h2>Sản phấm</h2>
+            <div class="chiTietSP">
+                <img src="~/Content/img/trắng.jpg" />  <a href="#">Giày đá banh trắng</a>
+            </div>
+        </div>
+       
+        <div class="Gia">
+            <h2>Đơn giá</h2>
+            <p>450.000VNĐ</p>          
+        </div>
+
+        <div class="Soluong">
+            <h2>Số lượng</h2>
+            <p>1</p>       
+        </div>
+
+        <div class="tienSP">
+            <h2>Số tiền</h2>
+            <p>450.000VNĐ</p>          
+        </div>
+    </section>
+
+    <section class="Ghichu">
+        <div class="voucher">
+            <p>Voucher của shop</p>  <a href="#">Chọn voucher khác</a>
+        </div>
+      
+
+        <div class="Loinhan">
+            <label>Lời nhắn:</label>
+            <input type="text" class="txtLN" placeholder="Lưu ý cho người bán"/>
+        </div>
+    </section>
+
+    <section class="Thanhtoan">
+        <div class="ptthanhToan">
+            <div class="thanhToan">
+                <label class="Thanhtoanbox">Phương thức thanh toán:</label>
+                <select name="chonpthuc" size="1" required>
+                    <option value="---">Thanh toán khi nhận hàng</option>
+                    <option value="---">Thanh toán qua tài khoản ngân hàng</option>
+                    <option value="---">Thanh toán qua ứng dụng MOMO</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="check">
+            <h3>Tổng tiền:</h3>
+            <h3>Phí vận chuyển:</h3>
+            <h3>Tiền giảm giá từ voucher:</h3>
+            <h3>Tổng thanh toán:</h3>
+        </div>
+
+        <div>
+            <button class="btnDH">ĐẶT HÀNG</button>
+        </div>
+    </section>
+</section>

@@ -1,0 +1,39 @@
+﻿@model đồ_án.Models.View_Model.HomeProductVM
+<link href="~/Content/css/sanPham.css" rel="stylesheet" />
+<div class="item-parent">
+    <div class="item-header">
+        <img src="~/Content/img/HomeImg/shoe.png" />
+        <h2>Giày Đá Bóng</h2>
+    </div>
+    <section class="container-fluid products-list">
+        @foreach (var product in Model.GiayProducts)
+        {
+            if (product.CategoryID == 1)
+            {
+                <div class="item-container">
+                    <a href="@Url.Action("ProductDetail", "Home", new { id = product.ProductID })">
+                        <img class="item-img" src="@product.ProductImage" />
+                        <div class="card-body">
+                            <p class="prodPrice text-truncate">
+                                @product.ProductPrice
+                            </p>
+
+                            <p class="prodName text-truncate">
+                                @product.ProductName
+                            </p>
+
+                            <p class="prodSale text-truncate">
+                                Đã bán: &nbsp; @product.OrderDetail.Count
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            }
+        }
+        <div class="more">
+            <a href="/ProductList/ProductList"><h2>Xem Thêm</h2></a>
+        </div>
+    </section>
+</div>
+
+

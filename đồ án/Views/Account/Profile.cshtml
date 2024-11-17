@@ -1,0 +1,53 @@
+﻿@model đồ_án.Models.View_Model.RegisterVM
+@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<style>
+    #iDetails {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<div class="container-fluid">
+    <hr />
+    <div class="dl-horizontal" id="iDetails">
+
+        <div class="col-md-8">
+            <dl>
+                <dt>
+                    Họ tên người dùng
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.CustomerName)
+                </dd>
+
+                <dt>
+                    Số điện thoại
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.CustomerPhone)
+                </dd>
+
+                <dt>
+                    Email người dùng
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.CustomerEmail)
+                </dd>
+
+                <dt>
+                    Địa chỉ khách hàng
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.CustomerAddress)
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>

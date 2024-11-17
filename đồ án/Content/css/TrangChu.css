@@ -1,0 +1,236 @@
+﻿.container {
+    background-color: whitesmoke;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    align-items: center;
+    background-image: url('../img/homeimg/hbanner.png');
+    background-position: center;
+    height: 80%;
+}
+
+.proList {
+    margin: 5% 10% 5% 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items:center;
+}
+
+    .proList ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items:center;
+    }
+
+        .proList ul li {
+            margin: 10px;
+        }
+
+            .proList ul li a {
+                padding: 20px;
+            }
+
+            .proList ul li img {
+                width: 70%;
+            }
+
+.containergiay {
+    background-color: yellow;
+    text-align: center;
+    margin: 5% 10% 5% 10%;
+    padding: 1% 0%;
+}
+.containergiay1 {
+    display: flex;
+    justify-content: center;
+}
+
+
+    .containergiay h1 {
+        font-size: 50px;
+    }
+
+.giaylist {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    align-items:center;   
+}
+
+
+.giay a img {
+    border: hidden 5px;
+    border-radius: 20px;
+    width: 50%
+}
+
+.price {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
+
+.detail {
+    font-size: 12px;
+    text-align: center;
+    align-items:center;
+    color: grey;
+}
+
+.firstPrice {
+    font-size: 15px;
+    text-align: center;
+    color: black;
+}
+
+.tenGiay {
+    font-size: 20px;
+    text-align: center;
+    color: darkblue;
+    font-weight: bold;
+}
+
+.more {
+    margin: 20px 0px;
+}
+
+.more a {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+}
+
+.containerao {
+    width: auto;
+    text-align: center;
+    background-color: lightblue;
+    margin: 5% 10% 5% 10%;
+    padding: 1% 0%;
+}
+
+    .containerao h1 {
+        font-size: 50px;
+        color: white;
+    }
+
+.aolist {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.ao {
+    padding: 20px;
+}
+
+    .ao a img {
+        border: hidden 5px;
+        border-radius: 10px;
+        width: 50%
+    }
+
+.price {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
+
+.detail {
+    font-size: 12px;
+    text-align:center;
+    align-items:center;
+    color: grey;
+}
+
+.firstPrice {
+    font-size: 15px;
+    text-align: center;
+    color: black;
+}
+
+.tenAo {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.containergang {
+    width: auto;
+    text-align: center;
+    background-color: lightblue;
+    margin: 5% 10% 5% 10%;
+    padding: 1% 0%;
+}
+
+.ganglist {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.gang a img {
+    border: hidden 5px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.price {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
+
+.detail {
+    font-size: 12px;
+    text-align: center;
+    align-items: center;
+    color: grey;
+}
+
+.firstPrice {
+    font-size: 15px;
+    text-align: center;
+    color: black;
+}
+
+.tenAo {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.htcuahang {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items:center;
+    margin-top: 50px;
+}
+
+.cuahang1 {
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+}
+
+    .cuahang1 img {
+        height: 60%;
+        width: auto;
+    }

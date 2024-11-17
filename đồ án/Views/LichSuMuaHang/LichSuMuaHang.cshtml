@@ -1,0 +1,318 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+
+@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<style type="text/css">
+    .containerLSMH {
+        display: block;
+    }
+
+    .containerkhung {
+        display: block;
+        border: 3px solid blue;
+    }
+
+    .containerkhung0 {
+        padding-left: 20px;
+        display: flex;
+        align-items: baseline;
+    }
+
+        .containerkhung0 p {
+            color: dimgrey;
+            padding-left: 10px;
+        }
+
+    .containerkhung1 {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+        .containerkhung1 button {
+            float: left;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            font-size: 18px;
+            font-weight: bold;
+            border: 1px solid #808080;
+            border-radius: 4px;
+        }
+
+    .containerkhung button:hover {
+        background-color: lightskyblue;
+    }
+
+    .containerkhung button.active {
+        background-color: lightskyblue;
+    }
+
+    .containerkhung2 {
+        display: block;
+    }
+
+    .containerlist {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid blue;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        ;
+    }
+
+        .tabcontent p {
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .tabcontent span {
+            font-size: 19px;
+            color: dimgrey;
+        }
+
+        .tabcontent a {
+            text-decoration-line: none;
+            font-size: 20px;
+            margin: 15px;
+        }
+
+    .productlist {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-between;
+        font-size: 19px;
+        text-align: center;
+    }
+
+        .productlist a {
+            display: block;
+            padding: 9px 10px;
+            margin: 3px 5px;
+            border: 2px solid royalblue;
+            border-radius: 4px;
+            color: royalblue;
+            margin-bottom: 20px;
+        }
+
+    .mainhang {
+        display: block;
+    }
+
+    .containerhang {
+        display: flex;
+        align-items: baseline;
+        text-align: left;
+        margin: 20px;
+    }
+
+    .leftch {
+        width: 30%;
+        font-size: 18px;
+    }
+
+    .mathang {
+        display: block;
+        text-align: left;
+        padding-left: 15px;
+    }
+
+        .mathang img {
+            width: 130px;
+            height: 100px;
+        }
+
+    .sp {
+        display: block;
+        margin: 30px;
+    }
+
+        .sp img {
+            max-width: 30%;
+            border-style: hidden;
+            border-radius: 5px;
+            margin-right: 83px;
+        }
+
+        .sp div {
+            display: inline-block;
+            vertical-align: top;
+            text-align: left;
+        }
+
+            .sp div h4 {
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+
+            .sp div p {
+                margin-top: 0px;
+                margin-bottom: 0px;
+                font-weight: normal;
+            }
+
+    .sanphamdamua {
+        margin-right: 253px;
+    }
+
+        .sanphamdamua h3 {
+            margin-left: 253px
+        }
+</style>
+
+<section class="containerLSMH">
+    <h2>Lịch sử mua hàng</h2>
+    <div class="containerkhung">
+        <div class="containerkhung0">
+            <h3>Đơn hàng đã mua</h3>
+            <p>từ 30/8/2024 - 30/9/2024</p>
+        </div>
+        <div class="containerkhung1">
+            <button class="tablinks" onclick="clickTab(event, 'Choxacnhan')">
+                Chờ xác nhận
+            </button>
+            <button class="tablinks" onclick="clickTab(event, 'Cholayhang')">
+                Chờ lấy hàng
+            </button>
+            <button class="tablinks" onclick="clickTab(event, 'Chogiaohang')">
+                Chờ giao hàng
+            </button>
+            <button class="tablinks" onclick="clickTab(event, 'Dahuy')">
+                Đã hủy
+            </button>
+            <button class="tablinks" onclick="clickTab(event, 'Thanhcong')">
+                Thành công
+            </button>
+        </div>
+        <div class="containerkhung2">
+            <div class="containerlist">
+                <div id="Choxacnhan" class="tabcontent">
+                    <p>Rất tiếc, không tìm thấy đơn hàng nào phù hợp</p>
+                    <span>Vẫn còn rất nhiều sản phẩm đang chờ bạn</span>
+                    <div class="productlist">
+                        <p>
+                            <a href="~/ProductList/ProductList">Quần áo</a>
+                        </p>
+                        <p>
+                            <a href="~/ProductList/ProductList">Giày</a>
+                        </p>
+                        <p>
+                            <a href="~/ProductList/ProductList">Găng tay</a>
+                        </p>
+                        <p>
+                            <a href="~/ProductList/ProductList">Vớ</a>
+                        </p>
+                    </div>
+                    <a href="~/Home/TrangChu"><  Về trang chủ</a>
+                </div>
+                <div id="Cholayhang" class="tabcontent">
+                    <p>Rất tiếc, không tìm thấy đơn hàng nào phù hợp</p>
+                    <span>Vẫn còn rất nhiều sản phẩm đang chờ bạn</span>
+                    <div class="productlist">
+                        <p>
+                            <a href="~/ProductList/ProductList">Quần áo</a>
+                        </p>
+                        <p>
+                            <a href="~/ProductList/ProductList">Giày</a>
+                        </p>
+                        <p>
+                            <a href="~/ProductList/ProductList">Găng tay</a>
+                        </p>
+                        <p>
+                            <a href="~/ProductList/ProductList">Vớ</a>
+                        </p>
+                    </div>
+                    <a href="~/Home/TrangChu"><  Về trang chủ</a>
+                </div>
+                <div id="Chogiaohang" class="tabcontent">
+                    <p>Ngày giao hàng dự kiến: Th9 13 - Th9 16</p>
+                    <span>Vui lòng chuẩn bị sẵn 768.000đ tiền mặt</span>
+                    <p>GHN Vận chuyển tiêu chuẩn</p>
+                    <span>VNGH029430401</span>
+                    <div class="mainhang">
+                        <div class="containerhang">
+                            <div class="leftch">
+                                Th9 11 <br />
+                                12:36 PM
+                            </div>
+                            <div class="rightch">
+                                <b>Lấy hàng thành công</b> <br />
+                                Đơn vị vận chuyển của chúng tôi đã tiếp nhận kiện hàng của bạn tại Huyện Phú Xuyên <br />
+                                <b style="font-style:italic">Huyện Phú Xuyên</b>
+                            </div>
+                        </div>
+                        <div class="containerhang">
+                            <div class="leftch">
+                                8:57 AM
+                            </div>
+                            <div class="rightch">
+                                <b>Nhà bán hàng đang chuẩn bị kiện hàng</b> <br />
+                                Nhà bán hàng đang chuẩn bị kiện hàng của bạn và sẽ bàn giao cho đơn vị vận chuyển
+                            </div>
+                        </div>
+                    </div>
+                    <p style="font-size:15px; color: dimgrey">Thời gian hiển thị theo múi giờ địa phương</p>
+                    <div class="mathang">
+                        <b>1 mặt hàng</b> <br />
+                        <img src="~/Content/img/HomeImg/giaybongda.png" />
+                    </div>
+                </div>
+                <div id="Dahuy" class="tabcontent">
+                    <p>Rất tiếc, không tìm thấy đơn hàng nào phù hợp</p>
+                    <span>Vẫn còn rất nhiều sản phẩm đang chờ bạn</span>
+                    <div class="productlist">
+                        <p>
+                            <a href="~/ProductList/ProductList">Quần áo</a>
+                        </p>
+                        <p>
+                            <a href="~/ProductList/ProductList">Giày</a>
+                        </p>
+                        <p>
+                            <a href="~/ProductList/ProductList">Găng tay</a>
+                        </p>
+                        <p>
+                            <a href="~/ProductList/ProductList">Vớ</a>
+                        </p>
+                    </div>
+                    <a href="~/Home/TrangChu"><  Về trang chủ</a>
+                </div>
+                <div id="Thanhcong" class="tabcontent">
+                    <div class="sanphamdamua">
+                        <h3>Các Sản Phẩm Đã Giao Thành Công</h3>
+                        <div class="sp">
+                            <img src="~/Content/img/HomeImg/gangtay12.png" />
+                            <div>
+                                <h4>Găng Tay Thể Thao Yousport</h4>
+                                <p>Size: XL</p>
+                                <p>Số lượng: 1</p>
+                                <p>Trạng Thái: Đã giao</p>
+                            </div>
+                        </div>
+                        <div class="sp">
+                            <img src="~/Content/img/HomeImg/gangtay12.png" />
+                            <div>
+                                <h4>Găng Tay Thể Thao Yousport</h4>
+                                <p>Size: XL</p>
+                                <p>Số lượng: 1</p>
+                                <p>Trạng Thái: Đã giao</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

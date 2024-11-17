@@ -1,0 +1,56 @@
+﻿
+
+@model đồ_án.Models.View_Model.HomeProductVM
+@using PagedList.Mvc
+
+<link href="~/Content/css/sanPham.css" rel="stylesheet" />
+
+@*HIỂN THỊ DS SẢN PHẢM*@
+@if (Model.GiayProducts != null && Model.GiayProducts.Any())
+{
+    <section class="container-fluid products-list">
+        <h2>CÁC SẢN PHẢM GĂNG THỦ MÔN</h2>
+        <ul class="list-container">
+            @foreach (var product in Model.GiayProducts)
+            {
+                if (product.CategoryID == 3)
+                {
+                    <li class="products-items">
+                        <div>
+                            <a href="@Url.Action("ProductDetail", "Home", new { id = product.ProductID })">
+                                @*<img src="@Html.DisplayFor(modelItem => product.ProductImage)"*@
+                                <img src="@product.ProductImage" />
+                            </a>
+                        </div>
+                        <div>
+                            <p class="prodPrice">
+                                @*@Html.DisplayFor(modelItem => product.ProductPrice)*@   @product.ProductPrice
+                            </p>
+
+                            <p class="prodName">
+                                @*@Html.DisplayFor(modelItem => product.ProductName)*@    @product.ProductName
+                            </p>
+
+                            <p class="prodSale">
+                                Đã bán: &nbsp; @*@Html.DisplayFor(modelItem => product.OrderDetails.Count)*@   @product.OrderDetail.Count
+                            </p>
+                        </div>
+                    </li>
+                }
+
+            }
+        </ul>
+    </section>
+
+    @*HIỂN THỊ PHÂN TRANG*@
+    <div class="pagenation-container">
+        @Html.PagedListPager(Model.GiayProducts, page => Url.Action("Index", new
+            { page, searchTerm = Model.SearchTerm }))
+    </div>
+}
+else
+{
+    <p>Không tìm thấy sản phẩm phụ hợp.</p>
+}
+
+

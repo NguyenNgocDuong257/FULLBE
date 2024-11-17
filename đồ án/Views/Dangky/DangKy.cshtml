@@ -1,0 +1,43 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<link href="~/Content/css/signUp.css" rel="stylesheet" />
+<section class="content">
+    <h1>Đăng ký</h1>
+    <section class="signUp">
+        <div class="nameAcc">
+            <div class="lastName" tabindex="1">
+                <input type="text" class="inputLN" placeholder="Họ" />
+            </div>
+
+            <div class="firstName" tabindex="2">
+                <input type="text" class="inputFN" placeholder="Tên" />
+            </div>
+        </div>
+
+        <div class="information">
+            <div class="account" tabindex="3">
+                <input type="text" class="inputAcc" placeholder="Email hoặc số điện thoại" />
+            </div>
+
+            <div class="password" tabindex="4">
+                <input type="text" class="passAcc" placeholder="Mật khẩu mới" />
+            </div>
+        </div>
+
+        <div class="date">
+            <label>Ngày sinh</label>
+            <input type="date" class="dateBirth" />
+        </div>
+
+        <div class="sexual">
+            <label>Giới tính</label>
+            <input class="sex" type="radio" value="Male" /> Nam
+            <input class="sex" type="radio" value="Female" /> Nữ
+        </div>
+
+        <div class="btn">
+            <button class="signUpbtn">Đăng ký</button>
+        </div>
+    </section>
+</section>
